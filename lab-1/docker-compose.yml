@@ -1,0 +1,40 @@
+version: '3.8'
+services:
+  web:
+    image: php:8.2-apache
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+    volumes:
+      - ./html:/var/www/html
+  db:
+    image: mysql:8.1.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: wpDB
+      MYSQL_USER: wpuser
+      MYSQL_PASSWORD: wpuser
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    environment:
+      PMA_HOST: db
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    ports:
+      - "8000:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wpuser
+      WORDPRESS_DB_PASSWORD: wpuser
+      WORDPRESS_DB_NAME: wpDB
+    volumes:
+      - ./wordpress_data:/var/www/html
