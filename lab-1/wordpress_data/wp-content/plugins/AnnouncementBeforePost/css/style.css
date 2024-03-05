@@ -1,0 +1,25 @@
+.abp-announcement{
+    padding: 8px
+}
+.abp-announcement-admin{
+    padding: 8px;
+    width:200px;
+    border:1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+label{
+    font-weight: bold;
+}
+textarea{
+    min-height: 100px;
+    max-height: 100px;
+}
+.delete-button{
+    color:wheat;
+    background-color: red;
+}
+form{
+    display:inline;
+}
