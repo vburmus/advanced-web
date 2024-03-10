@@ -1,9 +1,19 @@
-$primary-color: white
-$secondary-color: #647c8a
+$primary-color: #f5f3f0
+$secondary-color: #081339
 $box-shadow-lg: 0 1rem 3rem rgba(black, .175)
+$base-transition-time: 0.2s
+$base-text-size: 20px
+
+%text-style
+  font-family: "Arial Rounded MT Bold"
+  color: black
 
 body
   margin: 0
+  background-color: $primary-color
 
   h1
-    font-family: "Arial Rounded MT Bold"
+    @extend %text-style
+    color: white
+  h2
+    @extend %text-style
