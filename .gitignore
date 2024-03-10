@@ -5,3 +5,5 @@
 !/lab-1/wordpress_data/wp-content/plugins/NewlyAddedPostHighliter/*
 !/lab-1/wordpress_data/wp-content/plugins/AnnouncementBeforePost
 !/lab-1/wordpress_data/wp-content/plugins/AnnouncementBeforePost/*
+/lab-2/node_modules
+/lab-2/src/styles/css/
