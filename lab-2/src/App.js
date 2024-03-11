@@ -2,15 +2,17 @@ import Toolbar from "./components/Toolbar";
 import "./styles/css/styles.css"
 import ImageComponent from "./components/ImageComponent";
 import QuoteComponent from "./components/QuoteComponent";
-import Description from "./components/Description";
+import InvitationalComponent from "./components/InvitationalComponent";
+import InfoComponent from "./components/InfoComponent";
 
 function App() {
   return (
       <div>
           <Toolbar/>
-          <ImageComponent/>
-          <Description/>
+          <InvitationalComponent/>
+          <InfoComponent/>
           <QuoteComponent/>
+          <ImageComponent/>
       </div>
   );
 }

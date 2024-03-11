@@ -1,21 +1,22 @@
 @import "styles"
 
 .quote-container
-  margin-top: 3vh
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
-  background-color: #a2c8e1
   box-shadow: $box-shadow-lg
+  background-color: $secondary-color
+  padding: 20px
 
 .quote-text
   font-family: cursive
-  color: black
+  color: white
   font-size: $base-text-size + 10
 
 .author-text
   @extend %text-style
+  color: white
   font-size: $base-text-size
   width: 100vh
   text-align: end

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "../styles/css/image-container.css"
+import "../styles/css/image-component.css"
 import image1 from '../assets/villa1.jpg';
 import image2 from '../assets/villa2.jpg';
 import image3 from '../assets/villa3.jpg';
@@ -7,7 +7,7 @@ import {ArrowLeft, ArrowRight} from "react-bootstrap-icons"
 
 const ImageComponent = () => {
     const [imagesArray] = useState([image1, image2, image3]);
-    const [prices, setPrices] = useState(["500$", "1200$", "1500$"])
+    const [prices, _] = useState(["500$", "1200$", "1500$"])
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handleNextClick = () => {
