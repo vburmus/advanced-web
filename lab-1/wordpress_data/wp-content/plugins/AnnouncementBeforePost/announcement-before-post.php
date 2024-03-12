@@ -82,7 +82,7 @@ function abp_admin_page(){
 }
 
 function abp_display_after_title($content){
-    if (is_single()) {
+
         $opAnnouncements = get_option('abp_announcements', array());
         if (!empty($opAnnouncements)) {
             $randomElement = $opAnnouncements[array_rand($opAnnouncements)];
@@ -91,7 +91,7 @@ function abp_display_after_title($content){
                                   </div>
                                   <hr>";
             $content = $announcement_html . $content;
-        }
+
         return $content;
     }
 }

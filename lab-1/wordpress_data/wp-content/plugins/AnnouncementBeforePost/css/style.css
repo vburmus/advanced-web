@@ -1,11 +1,12 @@
 .abp-announcement{
     padding: 8px
 }
-.abp-announcement-admin{
+.apb-announcement-admin{
     padding: 8px;
     width:200px;
     border:1px solid grey;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
