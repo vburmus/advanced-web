@@ -4,6 +4,7 @@ import ImageComponent from "./components/ImageComponent";
 import QuoteComponent from "./components/QuoteComponent";
 import InvitationalComponent from "./components/InvitationalComponent";
 import InfoComponent from "./components/InfoComponent";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <InfoComponent/>
           <QuoteComponent/>
           <ImageComponent/>
+          <Footer/>
       </div>
   );
 }

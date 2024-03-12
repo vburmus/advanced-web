@@ -1,0 +1,28 @@
+@import "styles"
+$default_padding: 8px
+.villas-footer
+  @extend %text-style
+  background-color: $secondary-color
+  min-height: 20vh
+  padding: $default_padding
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-evenly
+  color: $primary-color
+  align-items: center
+  .logo
+    border-radius: 20px
+    width: 8rem
+    height: 6rem
+    background-color: $primary-color
+    margin: 12px
+    &-container
+      text-align: center
+    img
+      width: 100%
+      object-fit: cover
+  .list
+    margin-left: 10px
+    display: flex
+    flex-direction: column
+    gap: $default_padding
